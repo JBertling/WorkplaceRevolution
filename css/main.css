@@ -1,0 +1,96 @@
+body {
+	/* SET FONT FAMILY */
+	font-family: arial, helvetica, sans-serif;
+	/* SET FONT SIZE */
+	font-size: 16px;
+	/* SET FONT COLOR */
+	color: #333;
+	/* SET LINE HEIGHT */
+	line-height: 24px;
+}
+
+h1 {
+	
+}
+
+h2 {
+	
+}
+
+h3 {
+	
+}
+
+h4 {
+	
+}
+
+ul, ol {
+	
+}
+
+ul.no-bullets,
+ol.no-bullets {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.button {
+	
+}
+
+.button.large {
+	
+}
+
+.button.small {
+	
+}
+
+header {
+	
+}
+
+nav {
+	
+}
+
+footer {
+	
+}
+
+figure {
+	
+}
+
+article {
+	
+}
+
+section {
+	
+}
+
+/* MOBILE */
+
+@media only screen and (max-width: 600px) {
+	
+}
+
+/* NOT MOBILE */
+@media only screen and (min-width: 600px) {
+	
+}
+
+/* TABLET */
+
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+	
+}
+
+/* DESKTOP */
+
+@media only screen and (min-width: 900px) {
+	
+}
