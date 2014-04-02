@@ -6,7 +6,7 @@ body {
 	/* SET FONT COLOR */
 	color: #333;
 	/* SET LINE HEIGHT */
-	line-height: 24px;
+	line-height: 28px;
 }
 
 h1 {
@@ -29,23 +29,14 @@ ul, ol {
 	
 }
 
-ul.no-bullets,
-ol.no-bullets {
+ul.no-bullets {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
 }
 
-.button {
-	
-}
-
-.button.large {
-	
-}
-
-.button.small {
-	
+ul.horizontal li {
+	display: inline-block;
 }
 
 header {
@@ -70,6 +61,31 @@ article {
 
 section {
 	
+}
+
+table {
+	margin: 0;
+}
+
+
+.button {
+	
+}
+
+.button.large {
+	
+}
+
+.button.small {
+	
+}
+
+.row {
+	margin-bottom: 20px;
+}
+
+.floatright {
+	float: right;
 }
 
 /* MOBILE */
