@@ -4,9 +4,10 @@ body {
 	/* SET FONT SIZE */
 	font-size: 16px;
 	/* SET FONT COLOR */
-	color: #333;
+	color: #ececec;
 	/* SET LINE HEIGHT */
 	line-height: 28px;
+	background: #3a3033;
 }
 
 h1 {
@@ -40,11 +41,42 @@ ul.horizontal li {
 }
 
 header {
-	
+	position: static; width: 100%; padding: 10px 0;
+	background: rgba(18,15,16,0.9);
+}
+
+header:hover {
+	background: rgba(18,15,16,0.9);
+	transition: all 0.5s;
+}
+
+header .row {
+	margin-bottom: 0;
+}
+
+.logo a {
+	padding-left: 20px;
 }
 
 nav {
-	
+	display: none; height: 125px;
+	font-weight: bold;
+}
+
+nav li {
+	width: 33.33%; float: left;
+	font-size: 11.5px; text-transform: uppercase;
+}
+
+nav a {
+	display: block; padding: 10px 10px 10px 30px;
+	color: #ccc; text-decoration: none;
+	transition: all 0.5s;
+	background: rgba(73,64,67,0.9);
+}
+
+nav a:hover {
+	color: #fff;
 }
 
 footer {
@@ -67,6 +99,11 @@ table {
 	margin: 0;
 }
 
+.container {
+	clear: both; overflow: hidden;
+	max-width: 1200px; margin: 0 auto; padding-top: 30px;
+	background: #231f20;
+}
 
 .button {
 	
@@ -81,11 +118,38 @@ table {
 }
 
 .row {
+	margin-bottom: 40px;
+}
+
+.row .row {
 	margin-bottom: 20px;
 }
 
 .floatright {
 	float: right;
+}
+
+/* HEADER */
+.mobile-nav-trigger {
+	font-size: 18px;
+}
+
+.mobile-nav-trigger p {
+	margin-right: 20px; min-width: 60px;
+	text-align: center;
+	background: rgba(73,64,67,0.5);
+	cursor: pointer;
+	transition: all 0.5s;
+}
+
+.mobile-nav-trigger p:hover,
+.mobile-nav-trigger p.active {
+	background: rgba(73,64,67,0.9);
+}
+
+.mobile-nav-trigger span {
+	vertical-align: middle;
+	font-size: 12px;
 }
 
 /* MOBILE */
@@ -96,17 +160,48 @@ table {
 
 /* NOT MOBILE */
 @media only screen and (min-width: 600px) {
+	header {
+		position: fixed; width: 100%;
+		background: rgba(18,15,16,0.7);
+	}
+	nav {
+		display: block !important; height: auto;
+	}
+	nav li {
+		width: auto; float: none;
+	}
+	nav a {
+		padding: 10px;
+		background: transparent;
+	}
 	
+	/* HEADER */
+	.mobile-nav-trigger {
+		display: none;
+	}
 }
 
 /* TABLET */
 
 @media only screen and (min-width: 600px) and (max-width: 900px) {
-	
+	nav {
+		text-align: center;
+	}
+	.container {
+		padding-top: 120px;
+	}
 }
 
 /* DESKTOP */
 
 @media only screen and (min-width: 900px) {
-	
+	nav {
+		text-align: right;
+	}
+	nav li {
+		margin-right: 20px;
+	}
+	.container {
+		padding-top: 100px;
+	}
 }
